@@ -1,9 +1,8 @@
--- CreateTable
+--Create table 
 CREATE TABLE "chupete" (
-    "id" SERIAL NOT NULL,
+    "id" SERIAL PRIMARY KEY,
     "name" TEXT NOT NULL,
     "flavor" TEXT NOT NULL,
-    "price" DOUBLE PRECISION NOT NULL,
-
-    CONSTRAINT "chupete_pkey" PRIMARY KEY ("id")
+    "price" NUMERIC(10, 2) NOT NULL
 );
+
